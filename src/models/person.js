@@ -21,12 +21,15 @@ const schema = new Schema({
 
     phone: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
 
     cpf: {
         type: String,
-        required: true
+        required: true,
+        unique: true,
+        sparse: true
     }
 });
 

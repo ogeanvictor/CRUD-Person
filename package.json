@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "set NODE_ENV=dev && node ./bin/server.js",
     "dev": "set NODE_ENV=dev && node --watch ./bin/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",
+    "cpf-cnpj-validator": "^1.0.3",
     "express": "^4.18.2",
     "http-status-codes": "^2.2.0",
+    "moment": "^2.29.4",
     "mongoose": "^6.9.0"
   }
 }

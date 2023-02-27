@@ -4,9 +4,7 @@ const service = require('../service/person')
 
 exports.save = async (req,res) => {
     try {
-        console.log(req.body)
         let person = await service.save(req.body);
-        console.log(person)
         res.status(HttpStatusCodes.StatusCodes.OK).send(person);
     } catch(error) {
        res.status(HttpStatusCodes.StatusCodes.BAD_REQUEST).send({"message": error.message});
