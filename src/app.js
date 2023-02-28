@@ -11,7 +11,10 @@ const router = express.Router();
 
 // Carrega Rotas
 const personRoutes = require('./routes/person');
-app.use('/person', personRoutes);
+const mongoScriptsRoutes = require('./routes/mongoScripts');
+
+app.use('/persons', personRoutes);
+app.use('/mongoScripts', mongoScriptsRoutes);
 
 // Body-Parser
 
