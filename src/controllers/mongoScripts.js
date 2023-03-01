@@ -30,3 +30,19 @@ exports.cleanCpfInvalids = async (req,res) => {
         res.status(HttpStatusCodes.StatusCodes.BAD_REQUEST).send({"message": error.message});
     }
 };
+
+exports.formatedNumberPhone = async (req,res) => {
+    try {
+        let persons = await Person.find();
+
+        persons.forEach(async (person) => {
+            let formatedNumber = person.phone.replace(/[^0-9]/g, '');
+            person.phone = formatedNumber;
+            await Person.findByIdAndUpdate(person.id, person, {new: true});
+        });
+        
+        res.status(HttpStatusCodes.StatusCodes.OK).send(persons);
+    } catch(error) {
+        res.status(HttpStatusCodes.StatusCodes.BAD_REQUEST).send({"message": error.message});
+    }
+};

@@ -9,8 +9,9 @@ Primeira sessão do CRUD, com o intuito de fazer a base do projeto. Estudando pa
 1. Criar as pastas do projeto.
 2. Instalar dependências.
 3. Criando as primeiras rotas e metodos do objeto (Person).
+4. Formatar números de celular.
 
 Itens a se fazer:
 1. Validar/Formatar/Limpar CPF invalidos da base
-2. Formatar números de celular.
+
 3. Formatar bornDate para o padrão BR.
