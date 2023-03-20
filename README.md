@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------------------
-Sessão de projetos com CRUD, com o intuito de estudar e fazer projetos back-end, começando com um CRUD com o cadastramento de pessoas, preenchimento de formulários de informações pessoais, sistema de login e chat online.
+CRUD Cadastro de pessoas
 ---------------------------------------------------------------------------------------------------------------
 
 
